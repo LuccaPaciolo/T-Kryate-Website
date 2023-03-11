@@ -1,0 +1,41 @@
+.header {           
+    z-index: 100;
+}
+
+.hero-section p {
+    font-size: 2rem;
+    color: rgb(253, 253, 253);
+}
+
+section.contact {
+    background-color: white;
+}
+
+section.contact input {
+    border: 2px solid black;
+}
+
+section.contact textarea {
+    border: 2px solid black;
+}
+
+input.submit  {
+    background-color: black;
+    color: white;
+}
+
+section.subscription {
+    background-color: rgb(24, 144, 144);
+    color: black;
+}
+
+section.subscription  button {
+    background-color: white;
+}
+
+section.subscription  button a {   
+    font-size: 1em;
+    text-transform: uppercase;
+    font-weight: bold; 
+    color: rgb(24, 144, 144);     
+}

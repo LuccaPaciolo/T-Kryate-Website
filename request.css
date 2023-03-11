@@ -1,0 +1,176 @@
+
+.main-container {
+    background-color: rgb(255, 255, 255);
+    display: abbsolute;
+}
+
+.header {
+background-color: black;
+}
+
+ .hero {
+   color: rgb(32, 30, 30);
+   padding: 2em;
+   /* background-color: red; */
+}
+
+.hero h2 {
+    font-size: 3rem;
+    color: rgb(1, 71, 93);
+}
+.hero h2 span {
+    color: lightgreen;
+}
+
+.hero h5 {
+   color: rgb(1, 71, 93);
+
+}
+
+.hero h5 span {
+    color: green;
+}
+
+.hero p {
+    line-height: 2em;
+}
+
+.expect {    
+    background-color:  lightgreen;
+    padding: 2em;
+    border-radius: 2em;
+    color: rgb(1, 71, 93);  
+   
+}
+
+.expect span {
+    font-weight: bold;
+}
+
+.expect h3 {
+    font-size: 1.8rem;
+}
+
+.expect ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.expect ul li {
+    margin: 1.5em 0;
+    line-height: 2em;
+}
+
+.get-started {
+    background-color: white;
+    padding: 2em;
+}
+
+.get-started h3 {
+    color:rgb(1, 71, 93);
+}
+
+.get-started p {
+    color:rgb(1, 71, 93);
+    font-weight: bold;
+}
+
+.get-started ul {
+    padding: .1em;
+}
+
+.get-started ul li {
+    margin: 1em;
+    line-height: 2em;
+}
+
+.form input {
+    border: 2px solid lightgreen;
+    display: flex;
+    flex-direction: column;
+}
+
+form .submit-request {
+    border: none;
+    background-color: rgb(1, 71, 93);
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1em;
+    color: white;
+    text-align: center;
+    align-items: center;
+}
+
+form .submit-request:hover {
+    background-color: lightgreen;;
+}
+
+label  {
+    display: flex;
+    justify-content: left;
+    align-items: center;    
+}
+
+label div {
+    padding: 1em;
+}
+
+
+ @media  only screen and (min-width: 800px){
+    
+    /* html {
+        display: none;
+    } */
+    .wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        background-color: red;
+    }
+
+    .hero {
+        color: rgb(32, 30, 30);
+        padding: 2em;
+      
+    }
+     
+    .hero h2 {
+         font-size: 5rem;
+         color: rgb(1, 71, 93);
+    }
+         
+    .hero p {
+        line-height: 1.5em;
+        font-size: 1.3rem;       
+    }
+    
+    
+
+    
+     
+ }
+ 
+ @media  only screen and (min-width: 1250px){
+      /* html {
+        display: none;
+    } */
+
+    .holder {
+        /* background-color: red; */
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        z-index: -100;
+    }
+
+    .get-started {
+        background-color: white;
+        position: relative;
+        z-index: -100;
+    }
+
+
+    
+ 
+    
+ 
+ } 
+

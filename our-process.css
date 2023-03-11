@@ -1,0 +1,38 @@
+
+.main-container {
+    background-color: rgb(255, 255, 255);
+}
+
+.header {
+background-color: black;
+}
+
+.text {
+    color: black;
+    padding: 2em;
+    color: rgb(38, 131, 238);
+}
+
+.text h1 {
+    font-size: 5rem;
+    text-align: center;
+}
+
+.text p {
+    font-size: 1.5rem;
+    text-align: center;
+    color: black;
+}
+
+.project-research {
+    background-color: rgb(129, 255, 129);
+    padding: 2em;
+    text-align: center;
+    color: black;
+    border-radius:  3em 3em 0em 0em;
+}
+
+.project-research p {
+    font-size: 1.5rem;
+}
+

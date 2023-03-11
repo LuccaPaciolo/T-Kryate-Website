@@ -1,0 +1,104 @@
+.blog h1 {
+    font-size: 4rem;
+}
+
+.reasons {
+    background-color: rgb(252, 251, 251);
+    padding: 2em;
+    color: rgb(45, 42, 42);
+}
+
+.text-1 h4 {
+    color: black;
+}
+
+.text-1 .light {
+    color:rgb(167, 168, 169);
+}
+
+.text-1 {
+    background-color: white;
+    font-size: .8rem;
+    padding: 1.2em;
+    margin: 2em;
+    border-radius: 1em;
+    box-shadow: 4px 6px rgba(0, 0, 0, .1);
+}
+
+.text-1 button {
+    border: none;
+    background-color: white;
+}
+
+.text-1 a {
+    color: rgb(71, 69, 69);
+    text-decoration: none;
+}
+
+.updates {
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: column;
+    padding: 4em;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    border-radius: 2em;
+}
+
+.updates h2 {
+    font-size: 2.2rem;
+}
+
+form input {
+    text-transform: capitalize;
+    border-radius: 2em;
+}
+
+form input submit {
+    background-color: red;
+}
+
+.blog h5 {
+    color: blueviolet;
+    font-size: 1.8rem;
+}
+
+
+@media  only screen and (min-width: 800px){
+    
+    /* html {
+        display: none;
+    } */
+
+    .reasons {
+        /* background-color: red; */
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    } 
+
+    
+    
+     
+ }
+ 
+ @media  only screen and (min-width: 1250px){
+
+     /* html {
+        display: none;
+    } */
+
+    .hero-section h1 {
+        font-size: 6rem;
+    }
+
+    .hero-section p {
+        font-size: 2rem;
+    }
+    .text-1 {
+        font-size: 1.2rem;
+
+    }   
+ 
+ }
+

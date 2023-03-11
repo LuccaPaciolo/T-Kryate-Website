@@ -1,0 +1,884 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'montserrat', sans-serif; 
+    overflow-x: hidden;    
+}
+
+.main-container {     
+    height: 100vh;
+    width: 100vw;
+    color: white;  
+    background-color: black;     
+}
+
+.header {
+    height: auto;
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;   
+    padding: 1em 2em;
+    box-sizing: border-box;  
+    position: fixed; 
+    z-index: 10000;
+    
+}
+
+.logo {
+    height: 80px;   
+}
+
+.burger {
+    height: 80px;
+    cursor: pointer;
+}
+
+.close {
+    height: 50px; 
+    float: right;  
+    padding: 1em; 
+}
+
+nav {    
+    height: 100%;
+    width: 100%;   
+    background-color: rgb(0, 0, 0);
+    opacity: .99;
+    position: fixed;
+    margin: 0;
+    top: -100%;
+    left: 0;    
+    transform: translateY(-1%);
+    transition: transform .5s ease-in-out;
+}
+
+.show-nav {
+    transform: translateY(100%);
+}
+
+nav ul  {
+    list-style-type: none;    
+    text-align: center;
+    padding: 5em;  
+    height: 15em;          
+}
+
+nav ul li {
+    padding: .5em;       
+}
+
+nav ul li a {
+    color: white;
+    font-size: 1.3rem;   
+    text-decoration: none;
+    align-items: center;         
+}
+
+nav ul li a:hover {
+    border-bottom: 1.5px solid white;    
+}
+
+.hero-section {
+    background-color: black;
+    padding: 4em 3em;
+}
+
+.hero-section h1 {
+    font-size: 5rem;
+    line-height: 1.05em; 
+}
+
+.hero-section p {
+    font-size: 1rem;
+    margin-top: -1.5em;
+    line-height: 1.5em;
+}
+
+.hero-section button {
+    display: flex;
+    padding: 1em;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(218, 8, 81);
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: .5em;
+    cursor: pointer;      
+}
+
+.hero-section button a {
+    text-decoration: none;
+    color: black;
+}
+
+.hero-section button img {
+    height: 2em;
+}
+
+.hero-section button:hover {
+    background-color: white;
+}
+
+section h1 {
+    color: rgb(41, 40, 40);
+    text-align: center;
+    align-items: center;
+    font-size: 2em;   
+}
+
+section.service  {
+    color: rgb(42, 41, 41);
+    padding: 2em;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-self: center;
+    justify-content: center;
+    text-align: center;
+}
+
+section.service h2 {
+    font-size: 1.2rem;
+    color: rgb(218, 8, 81);
+}
+
+section.service p {
+    font-size: .8rem;
+    line-height: 1.5em;
+}
+
+section.service img {
+    height: 3em;
+}
+
+.branding, .web, .search, .mobile {
+    padding: 2em;
+    /* box-shadow: 0px 4px 5px rgba(0,0,0,.2); */
+    margin: .5em;
+    border-radius: 2em;    
+}
+
+.branding a img, .web a img, .search a img, .mobile a img   {
+    height: 2em;   
+}
+
+.branding a, .web a, .search a , .mobile a {
+   
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    color: rgb(41, 40, 40);
+    text-transform: uppercase;   
+    font-weight: bold; 
+    border-bottom: 2px solid rgb(213, 210, 210) ;
+}
+
+.branding a:hover,
+.web a:hover, 
+.search a:hover ,
+.mobile a:hover {
+     text-decoration: underline ;
+}
+
+section.why-us {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    line-height: 2em;
+    color: white;
+    padding: 3em;
+    background-color:  black;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+section.why-us img {
+    height: 100%;
+    width: 100%;    
+}
+
+section.why-us button {
+    padding: 1.2em;
+    border-radius: .5em;
+    background-color: rgb(218, 8, 81);
+}
+
+section.why-us button a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+}
+
+section.why-us button:hover {
+    background-color: white;    
+}
+
+section.our-process {
+    color: rgb(41, 40, 40);
+    font-size: 1.5rem;
+    padding: 2em;
+}
+
+section.our-process img {
+    height: 2em;
+}
+
+.lead {
+    
+    display: flex;
+    align-items: center;
+    text-align: left;
+    justify-content: center;    
+}
+
+.lead h2 {
+    padding: .5em;
+}
+
+.brainstorming .heading {
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    cursor: pointer; 
+    margin-top: 2em;
+}
+
+.approaching .heading {
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    cursor: pointer; 
+    margin-top: 2em;
+}
+
+.adjusting .heading {
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    cursor: pointer; 
+    margin-top: 2em;
+}
+
+.heading h3 {
+    padding: 0em .8em;
+}
+
+.paragraph {
+    background-color: rgb(42, 41, 41);
+    color: white;
+    margin: -.9em 0em;
+    padding:2em;
+    display: none;     
+}
+
+.brain-para {
+    background-color: rgb(42, 41, 41);
+    color: white;
+    margin: -.9em 0em;
+    padding:2em;
+    display: none;  
+}
+
+.add-brain-para {
+    display: block;  
+
+}
+
+.approach-para {
+    background-color: rgb(42, 41, 41);
+    color: white;
+    margin: -.9em 0em;
+    padding:2em;
+    display: none;  
+}
+
+.add-approach-para {
+    display: block;  
+
+}
+
+.adjust-para {
+    background-color: rgb(42, 41, 41);
+    color: white;
+    margin: -.9em 0em;
+    padding:2em;
+    display: none;  
+}
+
+.add-adjust-para {
+    display: block;  
+
+}
+
+.testimonial {
+    color: black;
+    padding: 2em;
+    background-color: rgb(48, 14, 130);    
+}
+
+.testimonial img {
+    height: 2em;
+}
+
+.testimonial ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.testimonial ul>*:first-child {
+    font-weight: bold;
+    color:  rgb(168, 10, 123);
+}
+
+.lucca-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+    border-radius: 1em;
+    background-color:  rgb(189, 162, 253);
+    margin: 1em;
+}
+
+.ben-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+    border-radius: 2em;
+    background-color:  rgb(189, 162, 253);  
+    margin: 1em;
+}
+
+.cozy-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+    border-radius: 2em;
+    background-color:  rgb(189, 162, 253); 
+    margin: 1em;
+}
+
+.image-cover img {
+    border: 2px solid rgb(168, 10, 123);
+    border-radius:  50%;
+    height: 6em;
+    width: 30%;    
+}
+
+section.request {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4em;
+}
+
+section.request  h3 {
+    font-size: 2rem;
+    color:  white;
+    margin-top: .01em;
+    
+    text-align: center;
+    line-height: 2em;
+}
+
+section.request button {
+    background-color: yellow;
+    border-radius: .5em;
+    padding: .8em;    
+}
+
+section.request a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color:  black;
+    text-align: center;    
+}
+
+section.request button:hover{
+    background-color: white;
+}
+
+section.contact {
+ 
+    padding: 4em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    overflow: hidden;
+    background-color: rgb(126, 177, 208);
+    position: relative;
+}
+
+section.contact h3 {
+    font-size: 2rem;
+    color:rgb(41, 40, 40);
+}
+
+form input {
+    
+    padding: 1em;
+    width: 90%;
+    margin: 1em 0em;
+    /* border-radius: 2em; */
+    border: none;
+    font-size: 1rem;
+    font-family: montserrat, sans-serif;
+}
+
+.message {
+    color:rgb(78, 76, 76);
+    font-size: 1rem;
+    padding: 1em;
+    font-family: montserrat, sans-serif;
+    border: none;
+}
+
+form input:focus {
+    outline: none;
+}
+
+form textarea:focus {
+    outline: none;
+}
+
+span {
+    color: rgb(250, 30, 1);     
+}
+
+input.submit  {
+    background-color: yellow;
+    cursor: pointer;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+input.submit:hover {
+    background-color: rgb(34, 115, 202);
+    color: white;
+}
+
+section.request-2 {
+    background-color:rgb(22, 21, 21); 
+    margin-top: -1.9em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 2em;
+    width: 22em;
+    position: absolute;
+    left: 40px;
+    border-radius: .5em;
+    box-shadow: 0px 4px 4px rgba(12, 12, 12, 0.5);  
+}
+
+section.request-2 h3 {
+    font-size: 1rem;
+    text-align: center;    
+}
+
+section.request-2 button {
+    padding: 1em;
+    background-color:rgb(218, 8, 81);
+    border: none;
+    width: 10em;    
+}
+
+section.request-2 button:hover {    
+    background-color: white;
+}
+
+section.request-2 button a {
+    color:  black;
+    text-decoration: none;
+    font-size: 1rem;    
+}
+
+section.request-2 button a:hover {
+    color: black;
+}
+
+footer {
+    background-color: black; 
+    margin-top: -1.9em;
+    padding: 15em 3em;
+    color: lightgrey;    
+    height: 20em;
+}
+
+.footer .footer-content {    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer .footer-content h3 {
+    color:  rgb(11, 194, 255);
+}
+
+.footer .footer-content ul  {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer .footer-content ul li {
+    padding: .5em 0em;
+    
+}
+
+.footer .links a {
+    text-decoration: none;
+    color:lightgrey; 
+}
+
+.footer .links a:hover {
+    border-bottom: 1px solid rgb(11, 194, 255);
+    margin:.2em;
+    transition: margin .2s ease-in-out;
+}
+
+footer img {
+    height: 1.5em;
+    background-color: rgb(250, 246, 246);
+    margin: .5em 1em;
+    cursor: pointer;
+}
+footer img:hover {
+    background-color: rgb(11, 194, 255);
+    border-radius: 2em;
+}
+
+footer .social {    
+    background-color: white;
+    padding: .2em;
+    border-radius: 2em;
+    width: 16em;
+}
+
+
+@media  only screen and (min-width: 540px){
+    /* html {
+        display:  none;
+    } */
+
+   section.service  {
+        margin-top: 9em;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        align-self: center;
+        justify-content: center;
+        text-align: center;
+    }
+   
+    .testimonial img {
+        height: 5em;
+        width: 5em;
+    }       
+    
+    .lucca-container {
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2em;
+        border-radius: 1em;
+        background-color:  rgb(189, 162, 253);
+        margin: 4em;
+    }
+
+    .ben-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2em;
+        border-radius: 2em;
+        background-color:  rgb(189, 162, 253);  
+        margin: 4em;
+    }
+
+    .cozy-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2em;
+        border-radius: 2em;
+        background-color:  rgb(189, 162, 253); 
+        margin: 4em;
+    }   
+
+    section.request-2 {
+        background-color:rgb(22, 21, 21); 
+        margin-top: -1.9em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        padding: 2em;
+        width: 22em;
+        position: absolute;
+        left: 100px;
+        border-radius: .5em;
+        box-shadow: 0px 4px 4px rgba(12, 12, 12, 0.5);  
+    }
+
+    section.request-2 {
+        position: absolute;
+        left: 3em;
+    }
+
+    footer {           
+        height: auto;
+    }  
+
+}
+
+
+
+@media  only screen and (min-width: 800px){
+    /* html {
+        display:  none;
+    } */
+   
+    .hero-section {
+        background-color: black;
+        padding: 4em 4em 12em 4em;
+    }
+
+    
+    .burger {
+       display: none;
+    }
+
+    .close {
+        display: none;
+    }
+
+    nav {    
+        height: auto;
+        width: auto;
+        opacity: 1;
+        position: absolute;
+        top: 0;
+        left: 40%;    
+        transform: unset;
+        transition: transform .5s ease-in-out; 
+        
+    }
+    
+    nav ul  {
+        list-style-type: none;    
+        text-align: right;
+        padding: 1em;  
+        height: auto;;  
+        display: flex;  
+          
+
+    }
+    
+    nav ul li {
+        padding: .5em;       
+    }
+    
+    nav ul li a {
+        color: white;
+        font-size: 1.3rem;   
+        text-decoration: none;
+        align-items: center;         
+    }
+    
+    nav ul li a:hover {
+        border-bottom: 1.5px solid white;    
+    }
+
+    section.service  {
+        margin-top: 8em;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-self: center;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    section.service h1 {
+        grid-column: 1/3;
+
+    }
+
+    .our-process {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);        
+    }
+
+    .our-process h3 {
+        font-size: 1rem;
+        
+    }
+
+    section.our-process img {
+        height: 2em;
+    }
+
+    
+    .lead {
+        grid-column: 1/4;
+      
+    }
+
+    .our-process .brainstorming, .approaching, .adjusting {
+        margin: -2em  .2em;
+        margin-bottom: 2em;                
+    }
+
+    .our-process h3, .brainstorming h3, .approaching h3, .adjusting h3 {
+        font-size: 1.2rem ;
+    }
+
+    .brain-para,
+    .approach-para,
+    .adjust-para {
+        font-size: 1rem;
+        background-color: rgb(39, 9, 115);
+        margin-top: .01em;
+        border-bottom-left-radius: 1em;
+    }   
+    
+}
+
+@media  only screen and (min-width: 1250px){
+
+    /* html {
+        display:  none;
+    } */
+
+    
+    
+    nav {    
+        position: absolute;
+        left: 60%;            
+    }  
+
+    .hero-section {
+        padding: 10em 25em 16em 11em;
+   }
+   
+   .hero-section h1 {
+       font-size: 5rem;
+       padding: 4em
+       line-height: 1.05em; 
+   }
+   
+   .hero-section p {
+       font-size: 1.5rem;
+       margin-top: -1.5em;
+       line-height: 1.5em;
+   }
+
+   section.service {
+       
+       padding: 0em 5em;
+       padding-top: 10em;
+   }
+   
+    section.why-us {
+        display: grid;
+        grid-template-columns:  repeat(2, 1fr);
+        gap: 2em;        
+    }
+
+    section.why-us  button {
+        width: 20em;
+        align-self: center;
+        justify-self: center;
+    }
+
+    section.why-us img {
+        grid-row:  1/3;
+        
+    }
+
+    .testimonial {
+        display: flex;        
+    }
+
+    section.request {
+        
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;    
+        gap: 5em;  
+        padding: 5em;       
+    }
+
+    section.request h3 {
+        padding: 0;
+        margin: 0;
+    }
+
+    section.contact {
+ 
+        padding: 25em;
+        padding-top: 2em;
+        padding-bottom: 5em;
+        
+    }
+
+    section.request-2 {       
+        width: 50em;
+        left: 13em;
+        display: flex;
+        flex-direction: row;
+        gap: 3em;
+    }
+
+    footer {
+        padding: 15em;
+    }
+
+    .footer .footer-content {    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2em;
+        
+        
+        align-items: flex-start
+    }
+    
+    .footer .footer-content h3 {
+        color:  rgb(11, 194, 255);
+    }
+    
+    .footer .footer-content ul  {
+        list-style-type: none;
+        padding: 0;
+    }
+    
+    .footer .footer-content ul li {
+        padding: .5em 0em;
+        
+    }
+
+
+   
+
+}
+
+
+

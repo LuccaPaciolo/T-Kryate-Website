@@ -1,0 +1,26 @@
+.privacy {
+    padding: 4em;
+    color: rgb(18, 18, 28);
+    background-color: white;
+}
+
+.privacy h1 {
+    font-size: 5rem;
+    color: rgb(88, 7, 102);
+}
+
+.privacy h2 {
+    color: rgb(88, 7, 102);
+}
+
+.privacy p {
+    font-size: .8rem;
+    line-height: 2em;
+}
+
+.privacy ul {
+    font-size: .8rem;
+    line-height: 2em;
+    padding: 1em;    
+}
+
