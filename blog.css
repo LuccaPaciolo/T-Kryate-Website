@@ -1,5 +1,8 @@
+
+
+
 .blog h1 {
-    font-size: 4rem;
+    font-size: 3rem;
 }
 
 .reasons {
@@ -90,6 +93,7 @@ form input submit {
 
     .hero-section h1 {
         font-size: 6rem;
+        
     }
 
     .hero-section p {

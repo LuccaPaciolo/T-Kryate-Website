@@ -2,15 +2,18 @@ body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'montserrat', sans-serif; 
-    overflow-x: hidden;    
+    font-family: 'montserrat', sans-serif;   
+    overflow-x:visible;
+        
+}
+button {
+    border: none;
 }
 
 .main-container {     
     height: 100vh;
     width: 100vw;
-    color: white;  
-    background-color: black;     
+    color: white;        
 }
 
 .header {
@@ -83,11 +86,15 @@ nav ul li a:hover {
 .hero-section {
     background-color: black;
     padding: 4em 3em;
+    max-height: 45em;
+    
 }
 
 .hero-section h1 {
-    font-size: 5rem;
+    font-size: 3rem;
+    padding-top: 1em;
     line-height: 1.05em; 
+    
 }
 
 .hero-section p {
@@ -246,6 +253,7 @@ section.our-process img {
     align-items: center;   
     cursor: pointer; 
     margin-top: 2em;
+    font-size: 1rem;
 }
 
 .approaching .heading {
@@ -255,6 +263,7 @@ section.our-process img {
     align-items: center;   
     cursor: pointer; 
     margin-top: 2em;
+    font-size: 1rem;
 }
 
 .adjusting .heading {
@@ -264,6 +273,7 @@ section.our-process img {
     align-items: center;   
     cursor: pointer; 
     margin-top: 2em;
+    font-size: 1rem;
 }
 
 .heading h3 {
@@ -281,8 +291,8 @@ section.our-process img {
 .brain-para {
     background-color: rgb(42, 41, 41);
     color: white;
-    margin: -.9em 0em;
-    padding:2em;
+    margin: -.1em 0em;
+    padding: 2em;
     display: none;  
 }
 
@@ -296,8 +306,10 @@ section.our-process img {
     color: white;
     margin: -.9em 0em;
     padding:2em;
+    margin: -.1em 0em;
     display: none;  
 }
+
 
 .add-approach-para {
     display: block;  
@@ -310,6 +322,7 @@ section.our-process img {
     margin: -.9em 0em;
     padding:2em;
     display: none;  
+    margin: -.1em 0em;
 }
 
 .add-adjust-para {
@@ -325,6 +338,8 @@ section.our-process img {
 
 .testimonial img {
     height: 2em;
+    width: 2em;
+    
 }
 
 .testimonial ul {
@@ -367,11 +382,10 @@ section.our-process img {
     margin: 1em;
 }
 
+
 .image-cover img {
     border: 2px solid rgb(168, 10, 123);
     border-radius:  50%;
-    height: 6em;
-    width: 30%;    
 }
 
 section.request {
@@ -483,7 +497,8 @@ section.request-2 {
     position: absolute;
     left: 40px;
     border-radius: .5em;
-    box-shadow: 0px 4px 4px rgba(12, 12, 12, 0.5);  
+    width: 15em;
+  
 }
 
 section.request-2 h3 {
@@ -517,36 +532,41 @@ footer {
     margin-top: -1.9em;
     padding: 15em 3em;
     color: lightgrey;    
-    height: 20em;
-}
-
-.footer .footer-content {    
+    min-height: 20em;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+ .footer-content {    
+    display: flex;    
+    flex-direction: column;
     justify-content: space-between;
-    align-items: flex-start;
+    text-align: center;   
+    height: auto;
+    margin-bottom: 2em;
 }
 
-.footer .footer-content h3 {
-    color:  rgb(11, 194, 255);
+ .footer-content h3 {
+    color:  rgb(11, 194, 255);   
 }
 
-.footer .footer-content ul  {
-    list-style-type: none;
-    padding: 0;
-}
-
-.footer .footer-content ul li {
-    padding: .5em 0em;
+ .footer-content ul  {
+     padding: 0;
+     margin: 0;
+     list-style-type: none;   
     
 }
 
-.footer .links a {
+.footer-content ul li {    
+    line-height: 2em;    
+}
+
+ .links a {
     text-decoration: none;
     color:lightgrey; 
 }
 
-.footer .links a:hover {
+.links a:hover {
     border-bottom: 1px solid rgb(11, 194, 255);
     margin:.2em;
     transition: margin .2s ease-in-out;
@@ -564,93 +584,17 @@ footer img:hover {
 }
 
 footer .social {    
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: white;
     padding: .2em;
     border-radius: 2em;
-    width: 16em;
-}
-
-
-@media  only screen and (min-width: 540px){
-    /* html {
-        display:  none;
-    } */
-
-   section.service  {
-        margin-top: 9em;
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        align-self: center;
-        justify-content: center;
-        text-align: center;
-    }
-   
-    .testimonial img {
-        height: 5em;
-        width: 5em;
-    }       
     
-    .lucca-container {
-        
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 2em;
-        border-radius: 1em;
-        background-color:  rgb(189, 162, 253);
-        margin: 4em;
-    }
-
-    .ben-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 2em;
-        border-radius: 2em;
-        background-color:  rgb(189, 162, 253);  
-        margin: 4em;
-    }
-
-    .cozy-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 2em;
-        border-radius: 2em;
-        background-color:  rgb(189, 162, 253); 
-        margin: 4em;
-    }   
-
-    section.request-2 {
-        background-color:rgb(22, 21, 21); 
-        margin-top: -1.9em;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-        align-items: center;
-        padding: 2em;
-        width: 22em;
-        position: absolute;
-        left: 100px;
-        border-radius: .5em;
-        box-shadow: 0px 4px 4px rgba(12, 12, 12, 0.5);  
-    }
-
-    section.request-2 {
-        position: absolute;
-        left: 3em;
-    }
-
-    footer {           
-        height: auto;
-    }  
-
 }
 
 
-
-@media  only screen and (min-width: 800px){
+@media  only screen and (min-width: 768px){
     /* html {
         display:  none;
     } */
@@ -686,9 +630,7 @@ footer .social {
         text-align: right;
         padding: 1em;  
         height: auto;;  
-        display: flex;  
-          
-
+        display: flex;   
     }
     
     nav ul li {
@@ -756,43 +698,68 @@ footer .social {
         background-color: rgb(39, 9, 115);
         margin-top: .01em;
         border-bottom-left-radius: 1em;
-    }   
-    
+    }
+
+    section.request {
+        
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;     
+        gap: 2em;  
+    }
+
+    section.request h3 {       
+        margin: 0;
+    }
+
+    section.request-2 {
+        min-width: 39em;
+        display: flex;
+        flex-direction: row;
+        gap: 2em;        
+    }
+ 
+    .footer-content {
+        display: flex;
+        flex-direction: row;
+        text-align: left;
+    }
 }
 
-@media  only screen and (min-width: 1250px){
+@media only screen and (min-width: 1366px) {
 
     /* html {
         display:  none;
-    } */
+    } */   
 
-    
+    .header {
+        margin: 0;
+        padding: 3em 9em;
+    }
     
     nav {    
         position: absolute;
-        left: 60%;            
+        left: 60%;    
+        margin-top: 2em;
     }  
 
-    .hero-section {
-        padding: 10em 25em 16em 11em;
+    .hero-section {       
+       padding: -50em;
+       padding: 3em 9em;
+       margin: 0;     
+       height: 60em;
    }
    
    .hero-section h1 {
-       font-size: 5rem;
-       padding: 4em
-       line-height: 1.05em; 
+       font-size: 6rem;
+       
    }
    
    .hero-section p {
        font-size: 1.5rem;
        margin-top: -1.5em;
-       line-height: 1.5em;
-   }
-
-   section.service {
-       
-       padding: 0em 5em;
-       padding-top: 10em;
+       line-height: 2em;
    }
    
     section.why-us {
@@ -817,7 +784,6 @@ footer .social {
     }
 
     section.request {
-        
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -831,12 +797,10 @@ footer .social {
         margin: 0;
     }
 
-    section.contact {
- 
+    section.contact { 
         padding: 25em;
         padding-top: 2em;
-        padding-bottom: 5em;
-        
+        padding-bottom: 5em;        
     }
 
     section.request-2 {       
@@ -855,10 +819,8 @@ footer .social {
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 2em;
-        
-        
-        align-items: flex-start
+        gap: 2em;      
+        align-items: flex-start;
     }
     
     .footer .footer-content h3 {
@@ -874,11 +836,11 @@ footer .social {
         padding: .5em 0em;
         
     }
-
+}
 
    
 
-}
+
 
 
 

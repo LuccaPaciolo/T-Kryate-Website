@@ -1,96 +1,20 @@
-body {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'montserrat', sans-serif; 
-    overflow-x: hidden;    
-}
-
-.main-container {     
-    height: 100vh;
-    width: 100vw;
-    color: white;  
-    background-color: black;     
-}
-
-.header {
-    height: auto;
-    width: 100vw;
-    background-color: black;
-    display: flex;
-    justify-content: space-between;   
-    padding: 1em 2em;
-    box-sizing: border-box;   
-}
-
-.logo {
-    height: 80px;   
-}
-
-.burger {
-    height: 80px;
-    cursor: pointer;
-}
-
-.close {
-    height: 50px; 
-    float: right;  
-    padding: 1em; 
-}
-
-nav {    
-    height: 100%;
-    width: 100%;   
-    background-color: rgb(0, 0, 0);
-    opacity: .99;
-    position: fixed;
-    margin: 0;
-    top: -100%;
-    left: 0;    
-    transform: translateY(-1%);
-    transition: transform .5s ease-in-out;
-}
-
-.show-nav {
-    transform: translateY(100%);
-}
-
-nav ul  {
-    list-style-type: none;    
-    text-align: center;
-    padding: 5em;  
-    height: 15em;          
-}
-
-nav ul li {
-    padding: .5em;       
-}
-
-nav ul li a {
-    color: white;
-    font-size: 1.3rem;   
-    text-decoration: none;
-    align-items: center;         
-}
-
-nav ul li a:hover {
-    border-bottom: 1.5px solid white;    
-}
 
 .hero-section {
     background-color: black;
     padding: 10em 3em;
+    max-height: 25em;
+    
 }
 
-.hero-section h1 {
-    font-size: 5rem;
-    line-height: 1.05em; 
+.hero-section h1 {    
+    font-size: 2.5rem;    
 }
 
 .hero-section p {
     font-size: 2rem;
     margin-top: -1.5em;
-    line-height: 1.5em;
+    margin-bottom: 3em;
+    line-height: 2em;
 }
 
 .hero-section button {
@@ -118,10 +42,6 @@ nav ul li a:hover {
     background-color: white;
 }
 
-.hero-section h1 {
-    font-size: 3rem;           
-}
-
 .hero-section p {
     font-size: .8rem;
 }
@@ -140,6 +60,9 @@ nav ul li a:hover {
 .award h3 {
     font-size: 3rem;
     margin: .5em 0em;
+}
+.web-designs {
+    max-width: 20em;
 }
 
 .award button {
@@ -177,6 +100,7 @@ nav ul li a:hover {
     font-size: 1.2rem;
     padding: 0em em;
     margin: 0;
+    line-height: 2em;
 }
 
 .other-service button  {
@@ -212,13 +136,13 @@ section.subscription  button a {
 }
 
 
-@media  only screen and (min-width: 540px){
+@media  only screen and (min-width: 768px){
     
     section.service  {
         
-         margin-top: 9em;
+         margin-top: 2em;
          display: grid;
-         grid-template-columns: repeat(1, 1fr);
+         grid-template-columns: repeat(2, 1fr);
          align-self: center;
          justify-content: center;
          text-align: center;
@@ -229,211 +153,52 @@ section.subscription  button a {
         padding: 2em;
         background-color: rgb(238, 235, 235);
         display: grid;
-        grid-template-columns: repeat( 3, 1fr);
-    }
-
-
+        grid-template-columns: repeat( 32, 1fr);
+        justify-content: center;
+        align-items: center;
        
+        
+    }       
     .award button {
         width: 10em;
         height: 5em;
         margin: .5em 0em 2em 0em;
         background-color: rgb(32, 183, 183);
-        border: none;
         font-size: 1rem;
         text-transform: uppercase;
         font-weight: bold;
         font-family: montserrat, sans-serif; 
-        border-radius: 1em; 
-         
+        border-radius: 1em;          
     }
     
     .award a {
         text-decoration: none;
         color: rgb(255, 255, 255);
+       
+    }
+
+    .other-service {
+        padding: 4em;
     }
     
-     .testimonial img {
-         height: 5em;
-         width: 5em;
-     }       
-     
-     .lucca-container {
-         
-         display: flex;
-         justify-content: center;
-         align-items: center;
-         padding: 2em;
-         border-radius: 1em;
-         background-color:  rgb(189, 162, 253);
-         margin: 4em;
-     }
- 
-     .ben-container {
-         display: flex;
-         justify-content: center;
-         align-items: center;
-         padding: 2em;
-         border-radius: 2em;
-         background-color:  rgb(189, 162, 253);  
-         margin: 4em;
-     }
- 
-     .cozy-container {
-         display: flex;
-         justify-content: center;
-         align-items: center;
-         padding: 2em;
-         border-radius: 2em;
-         background-color:  rgb(189, 162, 253); 
-         margin: 4em;
-     }   
- 
-     section.request-2 {
-         background-color:rgb(22, 21, 21); 
-         margin-top: -1.9em;
-         display: flex;
-         flex-direction: column;
-         justify-content: center;
-         text-align: center;
-         align-items: center;
-         padding: 2em;
-         width: 22em;
-         position: absolute;
-         left: 100px;
-         border-radius: .5em;
-         box-shadow: 0px 4px 4px rgba(12, 12, 12, 0.5);  
-     }
- 
-     section.request-2 {
-         position: absolute;
-         left: 3em;
-     }
- 
-     footer {           
-         height: auto;
-     }  
  
  }
  
  
  
- @media  only screen and (min-width: 800px){
-    
-     .hero-section {
-         background-color: black;
-         padding: 4em 4em;
-     }
  
-     
-     .burger {
-        display: none;
-     }
  
-     .close {
-         display: none;
-     }
- 
-     nav {    
-         height: auto;
-         width: auto;
-         opacity: 1;
-         position: absolute;
-         top: 0;
-         left: 40%;    
-         transform: unset;
-         transition: transform .5s ease-in-out; 
-         
-     }
-     
-     nav ul  {
-         list-style-type: none;    
-         text-align: right;
-         padding: 1em;  
-         height: auto;;  
-         display: flex;  
-           
- 
-     }
-     
-     nav ul li {
-         padding: .5em;       
-     }
-     
-     nav ul li a {
-         color: white;
-         font-size: 1.3rem;   
-         text-decoration: none;
-         align-items: center;         
-     }
-     
-     nav ul li a:hover {
-         border-bottom: 1.5px solid white;    
-     }
- 
-     section.service  {
-         margin-top: 8em;
-         display: grid;
-         grid-template-columns: repeat(2, 1fr);
-         align-self: center;
-         justify-content: center;
-         text-align: center;
-     }
-     
-     section.service h1 {
-         grid-column: 1/3;
- 
-     }
- 
-     .our-process {
-         display: grid;
-         grid-template-columns: repeat(3, 1fr);        
-     }
- 
-     .our-process h3 {
-         font-size: 1rem;
-         
-     }
- 
-     section.our-process img {
-         height: 2em;
-     }
- 
-     
-     .lead {
-         grid-column: 1/4;
-       
-     }
- 
-     .our-process .brainstorming, .approaching, .adjusting {
-         margin: -2em  .2em;
-         margin-bottom: 2em;                
-     }
- 
-     .our-process h3, .brainstorming h3, .approaching h3, .adjusting h3 {
-         font-size: 1.2rem ;
-     }
- 
-     .brain-para,
-     .approach-para,
-     .adjust-para {
-         font-size: 1rem;
-         background-color: rgb(39, 9, 115);
-         margin-top: .01em;
-         border-bottom-left-radius: 1em;
-     }   
-     
- }
- 
- @media  only screen and (min-width: 1250px){
+ @media  only screen and (min-width: 1366px){
      
      nav {    
          position: absolute;
          left: 60%;            
      }  
  
-     .hero-section {
-         padding: 4em 6em;
+     .hero-section {        
+        min-height: 45em;
+        padding: 4em 9em;
+
     }
     
     .hero-section h1 {
@@ -445,93 +210,16 @@ section.subscription  button a {
         font-size: 1.5rem;
         margin-top: -1.5em;
         line-height: 1.5em;
-    }
- 
-    section.service {
-        
-        padding: 0em 5em;
-        padding-top: 10em;
+    } 
+
+    .award {
+        display: flex;
+        gap: 2em;
+        justify-content: center;
+        align-items: center;
     }
     
-     section.why-us {
-         display: grid;
-         grid-template-columns:  repeat(2, 1fr);
-         gap: 2em;        
-     }
- 
-     section.why-us  button {
-         width: 20em;
-         align-self: center;
-         justify-self: center;
-     }
- 
-     section.why-us img {
-         grid-row:  1/3;
-         
-     }
- 
-     .testimonial {
-         display: flex;        
-     }
- 
-     section.request {
-         
-         display: flex;
-         flex-direction: row;
-         justify-content: center;
-         align-items: center;    
-         gap: 5em;  
-         padding: 5em;       
-     }
- 
-     section.request h3 {
-         padding: 0;
-         margin: 0;
-     }
- 
-     section.contact {
-  
-         padding: 25em;
-         padding-top: 2em;
-         padding-bottom: 5em;
-         
-     }
- 
-     section.request-2 {       
-         width: 50em;
-         left: 13em;
-         display: flex;
-         flex-direction: row;
-         gap: 3em;
-     }
- 
-     footer {
-         padding: 15em;
-     }
- 
-     .footer .footer-content {    
-         display: flex;
-         align-items: center;
-         justify-content: center
-         gap: 2em;
-         
-         
-         align-items: flex-start
-     }
      
-     .footer .footer-content h3 {
-         color:  rgb(11, 194, 255);
-     }
-     
-     .footer .footer-content ul  {
-         list-style-type: none;
-         padding: 0;
-     }
-     
-     .footer .footer-content ul li {
-         padding: .5em 0em;
-         
-     }
  
  
     

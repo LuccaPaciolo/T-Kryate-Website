@@ -21,3 +21,12 @@ form input {
 form input submit {
     background-color: red;
 }
+
+
+@media  only screen and (min-width: 1366px){
+
+    .subscribe {
+        padding-top: 8em;       
+    }
+
+}

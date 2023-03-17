@@ -1,7 +1,7 @@
 
 .main-container {
     background-color: rgb(255, 255, 255);
-    display: abbsolute;
+    display: absolute;
 }
 
 .header {
@@ -39,12 +39,12 @@ background-color: black;
     background-color:  lightgreen;
     padding: 2em;
     border-radius: 2em;
-    color: rgb(1, 71, 93);  
-   
+    color: rgb(1, 71, 93);     
 }
 
 .expect span {
     font-weight: bold;
+    color: inherit;
 }
 
 .expect h3 {
@@ -116,7 +116,7 @@ label div {
 }
 
 
- @media  only screen and (min-width: 800px){
+ @media  only screen and (min-width: 768px){
     
     /* html {
         display: none;
@@ -142,17 +142,58 @@ label div {
         line-height: 1.5em;
         font-size: 1.3rem;       
     }
-    
-    
 
+    .expect ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+                
+    }
+
+    .textarea {
+        width: 50em;
+        border: 1px solid grey;
+    }
     
+    .form-contents {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
      
  }
  
- @media  only screen and (min-width: 1250px){
+ @media  only screen and (min-width: 1366px){
       /* html {
         display: none;
     } */
+
+    .hero {
+        padding-top: 6em;
+        margin-bottom: 10em;
+    }
+    .hero h2 {
+        margin-bottom: 0em;
+    }
+
+    .form {
+        padding-top: 4em;
+    }
+
+    .expect h3 {
+        padding-left: 1em;
+    }
+
+    .expect {    
+        padding: .5em;
+        margin-top: -9em;
+        margin-left: 2em;
+    }
+
+    .expect ul {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0em 1em;
+        font-size: 1.2rem;        
+    }
 
     .holder {
         /* background-color: red; */
@@ -165,6 +206,10 @@ label div {
         background-color: white;
         position: relative;
         z-index: -100;
+    }
+
+    footer {
+        margin-top: 3em;
     }
 
 
